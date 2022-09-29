@@ -11,7 +11,9 @@ font-style: normal;
 font-weight: normal !important;
 font-variant: normal;
 text-transform: none;
-line-height: 1;
+line-height: 1.2;
+font-size: 1.4rem;
+
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
