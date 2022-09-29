@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'MASQUE';
+    src: url('../fonts/MASQUE.ttf');
+}
+
+body {
+    background-color: black;
+}
+
+.nav-container {
+    position: sticky;
+    top: 0;
+}
+
+nav:hover {
+    opacity: 100%;
+}
+
+header {
+    height: 15vw;
+    width: 100%;
+    background: url('../images/background.webp') no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+nav {
+    user-select: none;
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+
+    align-items: center;
+    opacity: 0.8;
+    transition: opacity 0.5s linear;
+    filter: drop-shadow(0px 50px 70px black);
+}
+
+nav img {
+    padding: 15px 30px 15px 30px;
+    width: 8vw;
+}
+
+nav a {
+    color: #ee1c4d;
+    font-family: 'MASQUE', 'Times New Roman', Times, serif;
+    padding: 30%;
+    border-right: white solid 1px;
+    text-decoration: none;
+    font-size: 1.5vw;
+    transition: color 0.3s linear;
+}
+
+nav a mark {
+    background-color: none;
+    color: white;
+    background-color: black;
+}
+
+nav a:hover {
+    border-bottom: white solid 2.5px;
+    color: white;
+
+}
+
+li a {
+    padding: 0.5vw 2vw 0.5vw 2vw;
+}
+
+li:last-child a:last-child {
+    border-right: none;
+}
+
+p {
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+
+}
+
+/*          ------------------
+----            CONTAINERS           ----
+            ------------------         */
+
+/*  
+        Startsida (index.html) 
+                                    */
+
+.index-container {
+    display: grid;
+    grid-template-columns: 31.5% 35% 31.5%;
+    grid-template-rows: 34vw 25.5vw 30vw;
+    gap: 1%;
+}
+
+.info-title {
+    vertical-align: bottom;
+    background-color: black;
+    font-size: 1.5vw;
+    color: white;
+    font-family: 'MASQUE', 'Times New Roman', Times, serif;
+
+}
+
+.index-container section:nth-child(1) {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    background-color: black;
+    background: url('../images/background.jpg') no-repeat;
+    
+
+    background-position-y: 50%;
+    background-size: cover;
+
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+}
+
+.index-container section:nth-of-type(1n+2) {
+
+    vertical-align: middle;
+    transition: opacity 1s;
+
+
+}
+
+.index-container section:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background: url('../images/lax-bowl.jpg') no-repeat;
+    background-size: cover;
+    height: 25.5vw;
+    width: 100%;
+
+}
+
+.index-container section:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background: url('../images/chicken-teriyaki.jpg') no-repeat;
+    background-size: cover;
+    height: 25.5vw;
+    width: 100%;
+
+}
+
+.index-container section:nth-child(4) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background: url('../images/salmon-roll.jpg') no-repeat;
+    background-size: cover;
+    height: 25.5vw;
+    width: 100%;
+
+}
+
+.index-container section:nth-child(5) {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    background: url('../images/food.jpg') no-repeat;
+    background-size: cover;
+    background-position-y: 90%;
+    height: 30vw;
+    width: 100%;
+}
+
+
+.index-container section:nth-child(6) {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    width: 100%;
+}
+
+/*      
+         Meny (meny.html) 
+                                */
+
+.meny-container {
+    display: grid;
+    grid-template-columns: 15% 34% 34% 15%;
+    grid-template-rows: 10vw 25vw 30vw 80vw;
+    gap: 0.5vw;
+    background-color: black;
+}
+
+.rolls section:nth-child(1) p {
+
+    width: 12vw;
+}
+
+.rolls p {
+    width: 4vw;
+}
+
+.meny-container .meny-title {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    font-size: 1.7vw;
+    color: white;
+    background-color: black;
+    font-family: 'MASQUE', 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.meny-container .left-bar {
+    grid-column: 1 / 2;
+    grid-row: 1 / 6;
+    background-color: black;
+}
+
+.meny-container .right-bar {
+    grid-column: 4 / 5;
+    grid-row: 1 / 6;
+    background-color: black;
+}
+
+.kockens-val {
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.meny-items {
+    border-radius: 1vw 2vw 1.5vw 0.5vw;
+    background-color: rgb(8, 8, 8);
+}
+
+.meny-items section {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    flex-basis: 12vw;
+    margin-right: 15%;
+    margin-left: 7%;
+    margin-bottom: 1vw;
+
+}
+
+.meny-items section:nth-child(1) {
+    display: block;
+}
+
+.meny-items h2 {
+    color: white;
+    font-size: 2vw;
+    margin: 10% 0 10% 0;
+    text-align: center;
+    font-family: 'MASQUE', 'Times New Roman', Times, serif;
+}
+
+.meny-container section p,
+h2 {
+    color: white;
+    font-size: 1vw;
+}
+
+.meny-container p mark {
+    color: #ee1c4d;
+    background-color: rgb(8, 8, 8);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.15vw;
+    text-align: center;
+}
+
+.bord-container {
+    display: flex;
+    justify-content: center;
+    color: white;
+    height: 40vw;
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column nowrap;
+    font-family: 'MASQUE', 'Times New Roman', Times, serif;
+
+}
+
+form section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column nowrap;
+}
+
+form h1 {
+    text-align: center;
+    font-size: 1.5vw;
+    width: 25vw;
+    margin-bottom: 3vw;
+}
+
+form .button {
+    cursor: pointer;
+}
+
+form label,
+form input {
+    height: 2vw;
+    font-size: 1.5vw;
+    width: 25vw;
+}
+
+
+
+/*-------------------------------*/
+
+.footer {
+    margin-bottom: 5%;
+}
+
+.footer section {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    flex: 1;
+    width: 100%;
+
+}
+
+.footer p {
+    font-size: 1.3vw;
+    color: white;
+}
+
+.footer section:nth-child(1) {
+    height: 10vw;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    flex: 1;
+}
+
+.footer section:nth-child(2) section:nth-child(1) {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    flex: 2;
+    width: 100%;
+    align-items: center;
+
+}
+
+.footer section:nth-child(2) section:nth-child(2) {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    flex: 2;
+    width: 100%;
+    align-items: center;
+}
+
+.footer h1 {
+    color: white;
+    font-size: 1.3vw;
+    text-decoration: underline;
+}
+
+.footer p:nth-child(-n+2) {
+    margin-top: 3%;
+    ;
+}
+
+.footer h2 {
+    color: white;
+    font-size: 1.65vw;
+    text-decoration: underline;
+}
