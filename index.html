@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="./styles/icon-pack/css/uicons-bold-straight.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body onload="pageLoad()">
+    <div class="loading-title">
+        <h1>Viktor Johansson</h1>
+        <h1>Portfolio</h1>
+    </div>
+
+    <main class="index-content">
+        <div class="menu-container">
+            <div class="menu-icon">
+                <i class="fi fi-bs-x"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./html/about.html"><mark>About me</mark> 
+                        <i class="fi fi-bs-arrow-alt-right"></i></a></li>
+                    <h1>Projects</h1>
+                    <li><a href="./html/ken-sushi.html"><mark>Ken Sushi</mark> 
+                                <i class="fi fi-bs-arrow-alt-right"></i></a></li>
+                    <li><a href="./html/happy-plants.html"><mark>My Happy Plants</mark> 
+                                <i class="fi fi-bs-arrow-alt-right"></i></a></li>
+                    <li><a href="./html/ecommerce.html"><mark>Ecommerce</mark> 
+                                <i class="fi fi-bs-arrow-alt-right"></i></a></li>
+                    <li><a href="./html/profile.html"><mark>Profile</mark> 
+                                <i class="fi fi-bs-arrow-alt-right"></i></a></li>
+                    
+                    
+                </ul>
+            </nav>
+        </div>
+     
+
+        <header>
+            <div class="top-icons">
+                <div class="menu-icon">
+                    <i class="fi fi-bs-menu-burger"></i>
+                </div>
+
+                <i class="fi fi-bs-angry"></i>
+            </div>
+
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="./imgs/me.png" alt="">
+
+                    <div class="title">
+                        <h1>Viktor Johansson</h1>
+                        <h1>Front-end Developer</h1>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button type="button" onclick="location.href='#project-content'"
+                        class="btn btn-dark fs-3 fw-lighter">My Projects</button>
+                </div>
+            </div>
+
+
+        </header>
+
+        <main id="project-content">
+            <div class="projects" id="projects">
+                <div class="ken-sushi">
+                    <div class="hover-content">
+                        <h1>Ken Sushi</h1>
+                        <button onclick="location.href='./html/ken-sushi.html'">Visit</button>
+                    </div>
+                </div>
+                <div class="happy-plants">
+                    <div class="hover-content">
+                        <h1>My Happy Plants</h1>
+                        <button onclick="location.href='./html/happy-plants.html'">Visit</button>
+                    </div>
+                </div>
+                <div class="ecommerce">
+                    <div class="hover-content">
+                        <h1>Ecommerce</h1>
+                        <button onclick="location.href='./html/ecommerce.html'">Visit</button>
+                    </div>
+                </div>
+                <div class="profile">
+                    <div class="hover-content">
+                        <h1>Profile</h1>
+                        <button onclick="location.href='./html/ecommerce.html'">Visit</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+           
+    </main>
+    <footer>
+        <p>test</p>
+    </footer> 
+    
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
