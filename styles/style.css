@@ -148,7 +148,7 @@ header img {
     width: 100%;
 }
 
-.projects section {
+.projects div {
     border-radius: 10%;
     max-width: 500px;
     min-width: 400px;
