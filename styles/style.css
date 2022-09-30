@@ -127,12 +127,13 @@ header img {
 
 }
 
-#project-content {
+#container {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40vh 100px 10vh 100px;
+    margin: 10rem 100px 10rem 100px;
+    height: 80rem;
 }
 
 .projects {
@@ -143,10 +144,11 @@ header img {
     justify-content: center;
     gap: 1rem;
     border-radius: 2rem;
-
+    height: 100%;
+    width: 100%;
 }
 
-.projects div {
+.projects section {
     border-radius: 10%;
     max-width: 500px;
     min-width: 400px;
@@ -429,6 +431,7 @@ footer p {
         grid-column: 2/4;
         grid-row: 2/3;
     }
+    /*-------------------------------*/
 
     header .logo {
         outline: 0;
@@ -481,8 +484,12 @@ footer p {
 
     }
 
-    #project-content {
-        height: 100vh;
+    .projects {
+        height: 40rem;
+    }
+
+    #container {
+        height: 45rem;
         margin: 0;
         display: flex;
         justify-content: center;
