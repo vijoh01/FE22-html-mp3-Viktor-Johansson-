@@ -132,8 +132,8 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10rem 100px 10rem 100px;
-    height: 80rem;
+    padding: 10rem 100px 10rem 100px;
+   
 }
 
 .projects {
@@ -144,8 +144,6 @@ header img {
     justify-content: center;
     gap: 1rem;
     border-radius: 2rem;
-    height: 100%;
-    width: 100%;
 }
 
 .projects div {
@@ -300,11 +298,13 @@ header img {
 }
 
 footer {
-    text-align: center;
     background-color: #272727;
     color: white;
     width: 100%;
-    height: 100px;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 footer p {
     font-size: 23px;
@@ -489,7 +489,6 @@ footer p {
     }
 
     #container {
-        height: 45rem;
         margin: 0;
         display: flex;
         justify-content: center;
