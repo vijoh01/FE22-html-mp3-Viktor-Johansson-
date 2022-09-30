@@ -355,6 +355,7 @@ footer p {
 
 .grid-container .title {
     padding-top: 20px;
+    color: black;
 }
 
 .grid-container article {
@@ -362,6 +363,7 @@ footer p {
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
+    color: black;
 }
 
 @media screen and (min-width: 950px) {
